@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapid Math - Superbrain Training</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A challenging math game. Quickly calculate the sum of numbers to exercise your brain's reaction speed and calculation ability. Suitable for math enthusiasts of all ages.">
+    <meta name="keywords" content="Math game, Brain Training, Speed Training, IQ test">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rapid-math.popgame.fun/">
+    <meta property="og:title" content="Rapid Math - Superbrain Training">
+    <meta property="og:description" content="A challenging math game. Quickly calculate the sum of numbers to exercise your brain's reaction speed and calculation ability. Suitable for math enthusiasts of all ages.">
+    <meta property="og:image" content="./images/preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rapid-math.popgame.fun/">
+    <meta property="twitter:title" content="Rapid Math - Superbrain Training">
+    <meta property="twitter:description" content="A challenging math game. Quickly calculate the sum of numbers to exercise your brain's reaction speed and calculation ability. Suitable for math enthusiasts of all ages.">
+    <meta property="twitter:image" content="./images/preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" type="image/png" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/rapid-math-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/rapid-math-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/rapid-math-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="canonical" href="https://popgame.fun/">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #2ecc71;
+            --text-color: #333;
+            --background-color: #f4f6f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .game-section {
+            padding: 50px 0;
+            background-color: white;
+            margin-top: 50px;
+        }
+
+        .game-iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 700px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            display: block;
+        }
+
+        .features {
+            background-color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-item {
+            background-color: var(--background-color);
+            padding: 40px 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background-color: var(--text-color);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 1024px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .game-iframe {
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">Rapid Math Challenging</div>
+            <!-- <nav>
+                <a href="#game" class="cta-button">Start Game.</a>
+            </nav> -->
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="game-section" id="game">
+                <iframe 
+                    src="number-game.html" 
+                    class="game-iframe" 
+                    title="数学速度挑战游戏" 
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>Flexible Settings</h3>
+                        <p>The range of numbers, display time and the quantity of numbers can be freely adjusted to meet the needs of different players.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>In-time Feedback</h3>
+                        <p>Record scores in real time, display achievements and stimulate your competitive spirit.
+                        </p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Brain Training</h3>
+                        <p>Improve calculation speed and concentration through interesting game ways.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p> 2024 Rapid Math | Designed for Superbrain Training</p>
+        </div>
+    </footer>
+</body>
+</html>
