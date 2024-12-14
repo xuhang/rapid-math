@@ -86,10 +86,36 @@
             align-items: center;
         }
 
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-image {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+
         .logo {
             font-size: 24px;
             font-weight: 700;
             color: var(--primary-color);
+        }
+
+        .more-games-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .more-games-btn:hover {
+            background-color: #27ae60;
         }
 
         /* Hero Section */
@@ -251,7 +277,11 @@
 <body>
     <header>
         <div class="container header-content">
-            <div class="logo">Rapid Math</div>
+            <div class="logo-container">
+                <img src="./images/rapid-math_min.png" alt="Rapid Math Logo" class="logo-image">
+                <div class="logo">Rapid Math</div>
+            </div>
+            <a href="https://popgame.fun" rel="dofollow" class="more-games-btn">More Games</a>
         </div>
     </header>
 
